@@ -16,7 +16,7 @@ Config { font = "xft:IosevkaTerm Nerd Font Mono:style=Regular 8"
        , allDesktops = True
        , overrideRedirect = True
        , commands =
-           [ Run Com "bash" ["/home/fank/.config/weather.sh","WADS"] "weather" 600
+           [ Run Com "bash" ["/home/fank/.config/sh_icao_weather_code/weather.sh","WADS"] "weather" 600
 
            , Run Network "enx4a2c3ffc7603" ["-t","TET <rx>kB|<tx>kB","-L","0","-H","32",
                                  "--normal","green","--high","cyan"] 10
