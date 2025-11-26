@@ -39,7 +39,7 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
                         , "--"
                         , "-O", "<fn=1>⚡︎</fn>"
                         , "-o", "<fn=1></fn>"
-                        , "-i", "<fn=1>ϟ</fn>"
+                        , "-i", "<fn=1></fn>"
                         ] 50
 
            , Run DiskU [ ("/", "SDA <free>/<size>")
@@ -56,15 +56,15 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
        , sepChar = "%"
        , alignSep = "}{"
        , template =
-           " <action=`nemo`><fn=1></fn> %disku%</action> \
-           \ <fn=1></fn> %swap% \
+           " <action=`nemo`><fn=1></fn> %disku%</action> \
+           \ <fn=1>󰯍</fn> %swap% \
            \ <fn=1></fn> %memory% \
            \ <fn=1></fn> %cpu% \
-           \ <action=`urxvt -e nmtui`><fn=1></fn> %wlxd03745c28e58% • %enx4a2c3ffc7603% • %wlp1s0%</action> } \
+           \ <action=`urxvt -e nmtui`><fn=1>󰖩</fn> %wlxd03745c28e58% • %enx4a2c3ffc7603% • %wlp1s0%</action> } \
            \ 
            { <fn=1></fn> %weather% \
-           \ <fn=1></fn> %volume% \
+           \ <fn=1>󰕾</fn> %volume% \
            \ %battery% \
-           \ <fn=1></fn> %date% \
-           \ <fn=1></fn> %user% " 
+           \ <fn=1>󰃯</fn> %date% \
+           \ <fn=1></fn> %user% " 
            }
