@@ -16,7 +16,7 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
        , allDesktops = True
        , overrideRedirect = True
        , commands =
-           [ Run Com "bash" ["~/.config/weather/weather.sh"] "weather" 600
+           [ Run Com "bash" ["-c","~/.config/weather/weather.sh"] "weather" 600
 
            , Run Network "enx4a2c3ffc7603" ["-t","TET <rx>kB|<tx>kB","-L","0","-H","32",
                                  "--normal","green","--high","cyan"] 10
