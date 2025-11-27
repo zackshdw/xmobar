@@ -42,9 +42,10 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
                         , "-i", "<fn=1></fn>"
                         ] 50
 
-           , Run DiskU [ ("/", "SDA <free>/<size>")
-                       , ("sdb1", " | SDB <free>/<size>")
-                       , ("sdc1", " | SDC <free>/<size>")
+           , Run DiskU [ ("/", "SDA <used>/<size>")
+                       , ("sdb1", " | SDB <used>/<size>")
+                       , ("sdc1", " | SDC <used>/<size>")
+                       , ("sdd1", " | SDC <used>/<size>")
                        ]
                        ["-L","20","-H","50","-m","1","-p","3"] 20
 
