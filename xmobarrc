@@ -57,15 +57,17 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
        , sepChar = "%"
        , alignSep = "}{"
        , template =
-           " <action=`nemo`><fn=1></fn> %disku%</action> \
+           " <action=`urxvt -e ranger`><fn=1></fn> %disku%</action> \
+           \ <action=`urxvt -e htop`> \
            \ <fn=1>󰯍</fn> %swap% \
            \ <fn=1></fn> %memory% \
            \ <fn=1></fn> %cpu% \
+           \ </action> \
            \ <action=`urxvt -e nmtui`><fn=1>󰖩</fn> %wlxd03745c28e58% • %enx4a2c3ffc7603% • %wlp1s0%</action> } \
            \ 
            { <fn=1></fn> %weather% \
-           \ <fn=1>󰕾</fn> %volume% \
+           \ <action=`urxvt -e pulsemixer`><fn=1>󰕾</fn> %volume%</action> \
            \ %battery% \
-           \ <fn=1>󰃯</fn> %date% \
-           \ <fn=1></fn> %user% " 
+           \ <action=`yad \-\-calendar`><fn=1>󰃯</fn> %date%</action> \
+           \ <action=`urxvt -e bash ~/.config/powermenu/powermenu.sh`><fn=1></fn> %user%</action> " 
            }
