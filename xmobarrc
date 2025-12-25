@@ -24,7 +24,7 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
            , Run Network "wlxd03745c28e58" ["-t","USB <rx>kB|<tx>kB","-L","0","-H","32",
                                  "--normal","green","--high","cyan"] 10 
 
-           , Run Network "wlp1s0" ["-t","SYS <rx>kB|<tx>kB","-L","0","-H","32",
+           , Run Network "wlp2s0" ["-t","SYS <rx>kB|<tx>kB","-L","0","-H","32",
                                  "--normal","green","--high","cyan"] 10
 
            , Run Cpu ["-t","<total>%",
@@ -43,9 +43,9 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
                         ] 50
 
            , Run DiskU [ ("/", "SDA <used>/<size>")
-                       , ("sdb1", " | SDB <used>/<size>")
-                       , ("sdc1", " | SDC <used>/<size>")
-                       , ("sdd1", " | SDC <used>/<size>")
+                       , ("sdb1", "| SDB <used>/<size>")
+                       , ("sdc1", "| SDC <used>/<size>")
+                       , ("sdd1", "| SDC <used>/<size>")
                        ]
                        ["-L","20","-H","50","-m","1","-p","3"] 20
 
@@ -57,13 +57,13 @@ Config { font = "IosevkaTerm Nerd Font Mono 8"
        , sepChar = "%"
        , alignSep = "}{"
        , template =
-           " <action=`urxvt -e ranger`><fn=1></fn> %disku%</action> \
-           \ <action=`urxvt -e htop`> \
+           " <action=`urxvt -e ranger`><fn=1></fn> %disku%</action>\
+           \<action=`urxvt -e htop`> \
            \ <fn=1>󰯍</fn> %swap% \
            \ <fn=1></fn> %memory% \
            \ <fn=1></fn> %cpu% \
-           \ </action> \
-           \ <action=`urxvt -e nmtui`><fn=1>󰖩</fn> %wlxd03745c28e58% • %enx4a2c3ffc7603% • %wlp1s0%</action> } \
+           \ </action>\
+           \<action=`urxvt -e nmtui`><fn=1>󰖩</fn> %wlxd03745c28e58% • %enx4a2c3ffc7603% • %wlp2s0%</action> } \
            \ 
            { <fn=1></fn> %weather% \
            \ <action=`urxvt -e pulsemixer`><fn=1>󰕾</fn> %volume%</action> \
